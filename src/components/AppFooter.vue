@@ -138,6 +138,33 @@
                         link: '#',
                     },
                 ],//sitesContent
+                socialList: [
+                    {
+                        img: 'footer-facebook.png',
+                        link: '#',
+                        social: 'facebook',
+                    },
+                    {
+                        img: 'footer-twitter.png',
+                        link: '#',
+                        social: 'twitter',
+                    },
+                    {
+                        img: 'footer-youtube.png',
+                        link: '#',
+                        social: 'youtube',
+                    },
+                    {
+                        img: 'footer-pinterest.png',
+                        link: '#',
+                        social: 'pinterest',
+                    },
+                    {
+                        img: 'footer-periscope.png',
+                        link: '#',
+                        social: 'periscope',
+                    },
+                ],//socialList
             };//return
         },//data
         methods: {
@@ -211,7 +238,14 @@
 
         <div class="social-bar">
             <div class="container">
+                <a href="#">sign-up now!</a>
 
+                <div class="social-box">
+                    <span>FOLLOW US</span>
+                    <a v-for="item in socialList" :href="item.link">
+                        <img :src="getImgPath(item.img)" :alt="item.social">
+                    </a>
+                </div>
             </div><!-- CHIUSURA CONTAINER -->
         </div><!-- CHIUSURA SOCIAL-BAR -->
 
@@ -241,5 +275,11 @@
         }//container
     }//navlist
 
+    .social-bar {
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 
 </style>
