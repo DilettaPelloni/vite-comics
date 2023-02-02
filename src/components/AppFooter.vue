@@ -1,35 +1,13 @@
+
 <script>
+    import FooterBlueMenu from './FooterBlueMenu.vue';
     export default {
         name: 'AppFooter',
+        components: {
+            FooterBlueMenu,
+        },//components
         data() {
             return {
-                blueMenuContent: [
-                    {
-                        img: 'buy-comics-digital-comics.png',
-                        title: 'digital comics',
-                        link: '#',
-                    },
-                    {
-                        img: 'buy-comics-merchandise.png',
-                        title: 'dc merchandise',
-                        link: '#',
-                    },
-                    {
-                        img: 'buy-comics-subscriptions.png',
-                        title: 'subscription',
-                        link: '#',
-                    },
-                    {
-                        img: 'buy-comics-shop-locator.png',
-                        title: 'comic shop locator',
-                        link: '#',
-                    },
-                    {
-                        img: 'buy-dc-power-visa.svg',
-                        title: 'dc power visa',
-                        link: '#',
-                    },
-                ],//blueMenuContent
                 dcComicsContent: [
                     {
                         title:'characters',
@@ -179,18 +157,7 @@
 
     <footer>
 
-        <div class="blue-menu">
-            <div class="container">
-                <ul>
-                    <li v-for="item in blueMenuContent">
-                        <a :href="item.link">
-                            <img :src="getImgPath(item.img)" :alt="item.title">
-                            <span>{{item.title}}</span>
-                        </a>
-                    </li>
-                </ul>
-            </div><!-- CHIUSURA CONTAINER -->
-        </div><!-- CHIUSURA BLUE-MENU -->
+        <FooterBlueMenu/>
 
         <div class="navlist">
             <div class="container">
@@ -254,32 +221,6 @@
 <style lang="scss" scoped>
     @import "../style/partials/colors.scss";
 
-    .blue-menu {
-        padding: 3rem;
-        background-color: $dc-blue;
-        ul {
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-            li {
-                color: white;
-                a {
-                    display: flex;
-                    align-items: center;
-                    text-transform: uppercase;
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                    img {
-                        margin-right: 1rem;
-                        height: 60px;
-                        max-width: 65px;
-                    }//img
-                }//a
-            }//li
-        }//ul
-    }//blue-menu
-
     .navlist {
         background-color: $nq-black;
         background-image: url('../assets/img/footer-bg.jpg');
@@ -295,10 +236,10 @@
                 .col {
                     margin-right: 2rem;
                     h3 {
-                        margin-bottom: 0.4rem;
+                        margin-bottom: 0.6rem;
                     }
                     ul {
-                        margin-bottom: 1.2rem;
+                        margin-bottom: 1.5rem;
                         list-style: none;
                         a {
                             color: $light-gray;
