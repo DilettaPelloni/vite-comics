@@ -63,6 +63,7 @@
                     <li v-for="navitem, i in navbar">
                         <a
                         :href="navitem.link"
+                        @click="active = i"
                         :class="{
                             active: active == i,
                         }">
@@ -80,7 +81,7 @@
     @import "../style/partials/colors.scss";
 
     header {
-        height: 150px;
+        height: 120px;
         background-color: white;
         .container {
             height: 100%;
@@ -100,8 +101,9 @@
                 a {
                     display: inline-block;
                     padding: 0 1rem;
-                    height: 150px;
-                    line-height: 150px;
+                    height: 120px;
+                    line-height: 120px;
+                    font-size: 0.9rem;
                     text-transform: uppercase;
                     font-weight: bold;
                     color: $nq-black;

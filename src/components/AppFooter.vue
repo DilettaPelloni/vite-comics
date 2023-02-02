@@ -236,7 +236,7 @@
 
         <div class="social-bar">
             <div class="container">
-                <a href="#">sign-up now!</a>
+                <a class="button" href="#">sign-up now!</a>
 
                 <div class="social-box">
                     <span>FOLLOW US</span>
@@ -267,6 +267,9 @@
                     display: flex;
                     align-items: center;
                     text-transform: uppercase;
+                    &:hover {
+                        text-decoration: underline;
+                    }
                     img {
                         margin-right: 1rem;
                         height: 60px;
@@ -319,10 +322,25 @@
     }//navlist
 
     .social-bar {
+        padding: 2rem ;
+        background-color: $dark-gray;
         .container {
             display: flex;
             justify-content: space-between;
-        }
-    }
+            .social-box {
+                display: flex;
+                align-items: center;
+                span {
+                    margin-right: 1rem;
+                    color: $dc-blue;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }//span
+                a {
+                    margin-left: 1rem;
+                }//a
+            }//social box
+        }//container
+    }//social bar
 
 </style>

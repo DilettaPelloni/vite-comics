@@ -11,5 +11,12 @@ $nq-black: #212121;
 a {
     text-decoration: none;
     color: inherit;
+    &.button {
+        display: inline-block;
+        padding: 1rem;
+        color: white;
+        text-transform: uppercase;
+        border: 2px solid $dc-blue;
+    }
 }
 
