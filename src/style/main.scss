@@ -1,6 +1,10 @@
 @import "./partials/reset";
+@import "./partials/colors";
+
+$nq-black: #212121;
 
 .container {
     max-width: 1300px;
     margin: 0 auto;
 }
+
