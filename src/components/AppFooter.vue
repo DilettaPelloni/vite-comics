@@ -197,7 +197,7 @@
                 <nav>
                     <div class="col">
                         <div class="list">
-                            <h4>DC COMICS</h4>
+                            <h3>DC COMICS</h3>
                             <ul>
                                 <li v-for="item in dcComicsContent">
                                     <a :href="item.link"> {{ item.title }} </a>
@@ -205,7 +205,7 @@
                             </ul>
                         </div>
                         <div class="list">
-                            <h4>SHOP</h4>
+                            <h3>SHOP</h3>
                             <ul>
                                 <li v-for="item in shopContent">
                                     <a :href="item.link"> {{ item.title }} </a>
@@ -214,7 +214,7 @@
                         </div>
                     </div><!-- CHIUSURA COL1 -->
                     <div class="col">
-                        <h4>DC</h4>
+                        <h3>DC</h3>
                         <ul>
                             <li v-for="item in dcContent">
                                 <a :href="item.link"> {{ item.title }} </a>
@@ -222,7 +222,7 @@
                         </ul>
                     </div><!-- CHIUSURA COL2 -->
                     <div class="col">
-                        <h4>SITES</h4>
+                        <h3>SITES</h3>
                         <ul>
                             <li v-for="item in sitesContent">
                                 <a :href="item.link"> {{ item.title }} </a>
@@ -230,9 +230,7 @@
                         </ul>
                     </div><!-- CHIUSURA COL3 -->
                 </nav>
-                <div class="logo-box">
-                    <img src="../assets/img/dc-logo-bg.png" alt="dc-logo-bg">
-                </div><!-- CHIUSURA LOGO-BOX -->
+                <div class="logo-box"></div>
             </div><!-- CHIUSURA CONTAINER -->
         </div><!-- CHIUSURA NAV-LIST -->
 
@@ -280,15 +278,43 @@
     }//blue-menu
 
     .navlist {
+        background-color: $nq-black;
+        background-image: url('../assets/img/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
         .container {
             display: flex;
             justify-content: space-between;
             nav {
+                padding: 2.5rem 0;
+                color: white;
                 display: flex;
-                ul {
-                    list-style: none;
-                }
+                .col {
+                    margin-right: 2rem;
+                    h3 {
+                        margin-bottom: 0.4rem;
+                    }
+                    ul {
+                        margin-bottom: 1.2rem;
+                        list-style: none;
+                        a {
+                            color: $light-gray;
+                            font-size: 0.8rem;
+                            text-transform: capitalize;
+                            &:hover {
+                                text-decoration: underline;
+                            }//a hover
+                        }//a
+                    }//ul
+                }//col
             }//nav
+            .logo-box {
+                width: 50%;
+                background-image: url('../assets/img/dc-logo-bg.png');
+                background-repeat: no-repeat;
+                background-size: auto 150% ;
+                background-position: center;
+            }//logo box
         }//container
     }//navlist
 
