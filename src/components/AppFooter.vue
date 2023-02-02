@@ -221,67 +221,71 @@
 <style lang="scss" scoped>
     @import "../style/partials/colors.scss";
 
-    .navlist {
-        background-color: $nq-black;
-        background-image: url('../assets/img/footer-bg.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        .container {
-            display: flex;
-            justify-content: space-between;
-            nav {
-                padding: 2.5rem 0;
-                color: white;
+    footer {
+        border-bottom: 25px solid $nq-black;
+        .navlist {
+            background-color: $nq-black;
+            background-image: url('../assets/img/footer-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            .container {
                 display: flex;
-                .col {
-                    margin-right: 2rem;
-                    h3 {
-                        margin-bottom: 0.6rem;
-                    }
-                    ul {
-                        margin-bottom: 1.5rem;
-                        list-style: none;
-                        a {
-                            color: $light-gray;
-                            font-size: 0.8rem;
-                            text-transform: capitalize;
-                            &:hover {
-                                text-decoration: underline;
-                            }//a hover
-                        }//a
-                    }//ul
-                }//col
-            }//nav
-            .logo-box {
-                width: 50%;
-                background-image: url('../assets/img/dc-logo-bg.png');
-                background-repeat: no-repeat;
-                background-size: auto 150% ;
-                background-position: center;
-            }//logo box
-        }//container
-    }//navlist
+                justify-content: space-between;
+                nav {
+                    padding: 2.5rem 0;
+                    color: white;
+                    display: flex;
+                    .col {
+                        margin-right: 2rem;
+                        h3 {
+                            margin-bottom: 0.6rem;
+                        }
+                        ul {
+                            margin-bottom: 1.5rem;
+                            list-style: none;
+                            a {
+                                color: $light-gray;
+                                font-size: 0.8rem;
+                                text-transform: capitalize;
+                                &:hover {
+                                    text-decoration: underline;
+                                }//a hover
+                            }//a
+                        }//ul
+                    }//col
+                }//nav
+                .logo-box {
+                    width: 50%;
+                    background-image: url('../assets/img/dc-logo-bg.png');
+                    background-repeat: no-repeat;
+                    background-size: auto 150% ;
+                    background-position: center;
+                }//logo box
+            }//container
+        }//navlist
 
-    .social-bar {
-        padding: 2rem ;
-        background-color: $dark-gray;
-        .container {
-            display: flex;
-            justify-content: space-between;
-            .social-box {
+        .social-bar {
+            padding: 2rem ;
+            background-color: $dark-gray;
+            .container {
                 display: flex;
-                align-items: center;
-                span {
-                    margin-right: 1rem;
-                    color: $dc-blue;
-                    font-weight: bold;
-                    font-size: 1.5rem;
-                }//span
-                a {
-                    margin-left: 1rem;
-                }//a
-            }//social box
-        }//container
-    }//social bar
+                justify-content: space-between;
+                .social-box {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        margin-right: 1rem;
+                        color: $dc-blue;
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                    }//span
+                    a {
+                        margin-left: 1rem;
+                    }//a
+                }//social box
+            }//container
+        }//social bar
+    }//footer
+    
 
 </style>

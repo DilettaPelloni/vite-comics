@@ -81,10 +81,10 @@
     @import "../style/partials/colors.scss";
 
     header {
-        height: 120px;
+        border-top: 25px solid $nq-black;
         background-color: white;
         .container {
-            height: 100%;
+            height: 120px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -99,8 +99,8 @@
                 list-style: none;
                 display: flex;
                 a {
-                    display: inline-block;
                     padding: 0 1rem;
+                    display: inline-block;
                     height: 120px;
                     line-height: 120px;
                     font-size: 0.9rem;
@@ -110,7 +110,7 @@
 
                     &.active {
                         color: $dc-blue;
-                        box-shadow: inset 0px -10px 0px 0px $dc-blue;
+                        box-shadow: inset 0px -5px 0px 0px $dc-blue;
                     }
                     &:hover {
                         color: $dc-blue;
