@@ -20,4 +20,16 @@
 </template>
 
 <style lang="scss" scoped>
+    @import "../style/partials/colors.scss";
+
+    main {
+        background-color: $nq-black;
+        .content {
+            padding: 3rem 0;
+            color: white;
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
 </style>
