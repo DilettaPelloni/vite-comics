@@ -254,11 +254,28 @@
 </template>
 
 <style lang="scss" scoped>
+    @import "../style/partials/colors.scss";
+
     .blue-menu {
-        background-color: #0880f8;
+        padding: 3rem;
+        background-color: $dc-blue;
         ul {
             list-style: none;
             display: flex;
+            justify-content: space-around;
+            li {
+                color: white;
+                a {
+                    display: flex;
+                    align-items: center;
+                    text-transform: uppercase;
+                    img {
+                        margin-right: 1rem;
+                        height: 60px;
+                        max-width: 65px;
+                    }//img
+                }//a
+            }//li
         }//ul
     }//blue-menu
 

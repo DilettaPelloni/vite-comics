@@ -60,7 +60,7 @@
             </div><!-- CHIUSURA LOGO-BOX  -->
             <div class="navbar">
                 <ul>
-                    <li v-for="(navitem, i) in navbar">
+                    <li v-for="navitem, i in navbar">
                         <a
                         :href="navitem.link"
                         :class="{
@@ -105,7 +105,6 @@
                     text-transform: uppercase;
                     font-weight: bold;
                     color: $nq-black;
-                    text-decoration: none;
 
                     &.active {
                         color: $dc-blue;
