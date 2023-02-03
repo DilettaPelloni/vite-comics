@@ -80,7 +80,6 @@
 <style lang="scss" scoped>
 
     header {
-        border-top: 25px solid $nq-black;
         background-color: white;
         .container {
             height: 120px;
