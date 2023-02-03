@@ -78,7 +78,6 @@
 </template>
 
 <style lang="scss" scoped>
-    @import "../style/partials/colors.scss";
 
     header {
         border-top: 25px solid $nq-black;

@@ -20,7 +20,6 @@
 </template>
 
 <style lang="scss" scoped>
-    @import "../style/partials/colors.scss";
 
     main {
         background-color: $nq-black;

@@ -219,7 +219,6 @@
 </template>
 
 <style lang="scss" scoped>
-    @import "../style/partials/colors.scss";
 
     footer {
         border-bottom: 25px solid $nq-black;
